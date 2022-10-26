@@ -23,6 +23,10 @@ mongoose
 
 app.use("/api/user", userRoutes);
 
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
+
 app.listen(5000, () => {
   console.log("server running on port 5000!");
 });
